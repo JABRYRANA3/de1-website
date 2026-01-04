@@ -1,0 +1,5 @@
+run_id;task;note;files_read;input_size_bytes;shuffle_read_bytes;shuffle_write_bytes;timestamp
+r1;topN_rdd;RDD API;2;118;118;118;200 ms
+r1;topN_df;DataFrame API;2;2969;2969;2969;2000 ms
+r1;projection_all_cols;select_all;2;560;560;560; 400 ms
+r1;projection_min_cols;projection_minimal;2;560;560;560; 200 ms
