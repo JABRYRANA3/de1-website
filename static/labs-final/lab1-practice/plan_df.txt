@@ -1,0 +1,14 @@
+2025-12-20 21:46:16.893064
+
+AdaptiveSparkPlan isFinalPlan=false
++- TakeOrderedAndProject(limit=10, orderBy=[count#519L DESC NULLS LAST,token#518 ASC NULLS FIRST], output=[token#518,count#519L])
+   +- HashAggregate(keys=[token#518], functions=[count(1)], output=[token#518, count#519L])
+      +- Exchange hashpartitioning(token#518, 200), ENSURE_REQUIREMENTS, [plan_id=425]
+         +- HashAggregate(keys=[token#518], functions=[partial_count(1)], output=[token#518, count#585L])
+            +- Filter NOT (token#518 = )
+               +- Generate explode(split(lower(text#20), \s+, -1)), false, [token#518]
+                  +- InMemoryTableScan [text#20]
+                        +- InMemoryRelation [id#17, category#18, value#19, text#20], StorageLevel(disk, memory, deserialized, 1 replicas)
+                              +- Union
+                                 :- FileScan csv [id#17,category#18,value#19,text#20] Batched: false, DataFilters: [], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Lab01/lab1_dataset_a.csv], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<id:int,category:string,value:double,text:string>
+                                 +- FileScan csv [id#38,category#39,value#40,text#41] Batched: false, DataFilters: [], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Lab01/lab1_dataset_b.csv], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<id:int,category:string,value:double,text:string>
