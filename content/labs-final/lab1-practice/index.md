@@ -1,45 +1,33 @@
 ---
-title: lab1-practice
+title: Lab 1 - Practice
 ---
 
-## Notebook
+# Lab 1 : Practice - Analyse et Rendu
 
--  **Visualisation** : 
-  [Ouvrir le notebook](https://nbviewer.org/url/de1-website.pages.dev/labs-final/lab1-practice/DE1_Lab1_Notebook_EN.ipynb)
+## 1. Notebook & Code
+Visualisation et téléchargement du notebook.
 
-- **Téléchargement** : 
-  [DE1_Lab1_Notebook_EN.ipynb](/labs-final/lab1-practice/DE1_Lab1_Notebook_EN.ipynb)
+* **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab1-practice/DE1_Lab1_Notebook_EN.ipynb)
+* **Télécharger le source (.ipynb) :** [DE1_Lab1_Notebook_EN.ipynb](/labs-final/lab1-practice/DE1_Lab1_Notebook_EN.ipynb)
 
----
+## 2. Rapport
+L'analyse complète au format PDF.
 
-## Rapport
+* [Rapport_labs_practice.pdf](/labs-final/lab1-practice/Rapport_labs_practice.pdf)
 
-- [Rapport des labs (PDF)](/labs-final/lab1-practice/Rapport_labs_practice.pdf)
+## 3. Outputs (Données générées)
+Voici les fichiers de sortie séparés.
 
----
+### Fichiers CSV
+* [top10_df.csv](/labs-final/lab1-practice/top10_df.csv)
+* [top10_rdd.csv](/labs-final/lab1-practice/top10_rdd.csv)
 
-## Outputs
+### Plans d'exécution (Proof)
+* [plan_df.txt](/labs-final/lab1-practice/plan_df.txt)
+* [plan_rdd.txt](/labs-final/lab1-practice/plan_rdd.txt)
 
-- [top10_df.csv](/labs-final/lab1-practice/top10_df.csv)
-- [top10_rdd.csv](/labs-final/lab1-practice/top10_rdd.csv)
+## 4. Metrics & Datasets
 
----
-
-## Metrics
-
-- [lab1_metrics_log.csv](/labs-final/lab1-practice/lab1_metrics_log.csv)
-
----
-
-## Datasets utilisés
-
-- [lab1_dataset_a.csv](/labs-final/lab1-practice/lab1_dataset_a.csv)
-- [lab1_dataset_b.csv](/labs-final/lab1-practice/lab1_dataset_b.csv)
-
----
-
-## Proof
-
-- [plan_rdd.txt](/labs-final/lab1-practice/plan_rdd.txt)
-- [plan_df.txt](/labs-final/lab1-practice/plan_df.txt)
-
+* **Metrics Log :** [lab1_metrics_log.csv](/labs-final/lab1-practice/lab1_metrics_log.csv)
+* **Dataset A :** [lab1_dataset_a.csv](/labs-final/lab1-practice/lab1_dataset_a.csv)
+* **Dataset B :** [lab1_dataset_b.csv](/labs-final/lab1-practice/lab1_dataset_b.csv)
