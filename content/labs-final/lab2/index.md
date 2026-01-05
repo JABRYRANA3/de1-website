@@ -22,8 +22,18 @@ Analyse complète au format PDF, incluant des captures d’écran des métriques
 ## 3. Proof (Plans d'exécution)
 Fichiers textes prouvant l'exécution.
 
-* <a href="/labs-final/lab2/proof/plan_ingest.txt" download>plan_ingest.txt</a>
-* <a href="/labs-final/lab2/proof/plan_fact_join.txt" download>plan_fact_join.txt</a>
+<ul>
+  <li>
+    <a href="/labs-final/lab2/proof/plan_ingest.txt" download="plan_ingest.txt" target="_blank">
+       Télécharger plan_ingest.txt
+    </a>
+  </li>
+  <li>
+    <a href="/labs-final/lab2/proof/plan_fact_join.txt" download="plan_fact_join.txt" target="_blank">
+       Télécharger plan_fact_join.txt
+    </a>
+  </li>
+</ul>
 
 ## 4. Outputs (Données générées)
 
