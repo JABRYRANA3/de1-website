@@ -8,14 +8,14 @@ title: Lab 3 - Practice
 * **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab3/DE1_Lab3_Notebook_EN.ipynb?flush_cache=true)
 * **Télécharger le source :**
 <a href="/labs-final/lab3/DE1_Lab3_Notebook_EN.ipynb" download="DE1_Lab3_Notebook_EN.ipynb">
-    Télécharger le Notebook (.ipynb)
+   Télécharger le Notebook (.ipynb)
 </a>
 
 ## 2. Rapport
 Analyse complète au format PDF, incluant des captures d’écran des métriques et de l’utilisation de l’IA.
 
 <a href="/labs-final/lab3/Rapport_labs_practice.pdf" download>
-    Télécharger le Rapport PDF
+   Télécharger le Rapport PDF
 </a>
 
 ## 3. Proof (Plans d'exécution)
@@ -23,18 +23,18 @@ Preuves d'exécution.
 
 <ul>
   <li>
-    <a href="/labs-final/lab3/proof/plan_broadcast.txt" download="plan_broadcast.txt" target="_blank">
-        Télécharger plan_broadcast.txt
+    <a href="/labs-final/lab3/proof/plan_broadcast.txt" download="plan_broadcast.txt">
+       Télécharger plan_broadcast.txt
     </a>
   </li>
   <li>
-    <a href="/labs-final/lab3/proof/plan_column.txt" download="plan_column.txt" target="_blank">
-        Télécharger plan_column.txt
+    <a href="/labs-final/lab3/proof/plan_column.txt" download="plan_column.txt">
+       Télécharger plan_column.txt
     </a>
   </li>
   <li>
-    <a href="/labs-final/lab3/proof/plan_row.txt" download="plan_row.txt" target="_blank">
-        Télécharger plan_row.txt
+    <a href="/labs-final/lab3/proof/plan_row.txt" download="plan_row.txt">
+       Télécharger plan_row.txt
     </a>
   </li>
 </ul>
@@ -43,7 +43,7 @@ Preuves d'exécution.
 Résultats finaux compressés.
 
 <a href="/labs-final/lab3/outputs.zip" download>
-    Télécharger Outputs (.zip)
+   Télécharger Outputs (.zip)
 </a>
 
 ## 5. Metrics & Datasets
