@@ -11,7 +11,7 @@ Visualisation et téléchargement du notebook.
 * **Télécharger le source (.ipynb) :** [DE1_Lab1_Notebook_EN.ipynb](/labs-final/lab1-practice/DE1_Lab1_Notebook_EN.ipynb)
 
 ## 2. Rapport
-L'analyse complète au format PDF.
+Analyse complète au format PDF, incluant des captures d’écran des métriques et de l’utilisation de l’IA.
 
 * [Rapport_labs_practice.pdf](/labs-final/lab1-practice/Rapport_labs_practice.pdf)
 
