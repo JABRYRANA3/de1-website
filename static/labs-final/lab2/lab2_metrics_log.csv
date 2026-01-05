@@ -1,0 +1,5 @@
+run_id;task;note;files_read;input_size_bytes;shuffle_read_bytes;shuffle_write_bytes;timestamp
+r1;ingest_plan;csv_ingestion_with_structtype;6;59;0;59; 100 ms
+r1;fact_join;df_fact.count() after join;1;59;0;59; 500 ms
+r1;caseA_join_then_project;a.count();107;4900;0;4900; 400 ms
+r1;caseB_project_then_join; b.count();107;4900;0;4900; 300 ms
