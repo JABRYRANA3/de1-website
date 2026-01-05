@@ -10,8 +10,10 @@ Visualisation et téléchargement du notebook.
 * **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/assignment3/assignment3_esiee.ipynb)
 
 * **Télécharger :**
-<a href="/labs-final/assignment3/assignment3_esiee.ipynb" download="assignment3_esiee.ipynb">
+<a href="/labs-final/assignment3/assignment3_esiee.ipynb" download>
     Télécharger le Notebook (.ipynb)
 </a>
+
+
 
 
