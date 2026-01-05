@@ -2,8 +2,7 @@
 title: Lab 2 - Practice
 ---
 
-# Lab 2 :  Star Schema ETL
-
+# Lab 2 : Star Schema ETL
 
 
 ## 1. Notebook & Code
