@@ -2,7 +2,7 @@
 title: Lab 2 - Practice
 ---
 
-# Lab 2 : Star Schema ETL
+# Lab 2 :  Star Schema ETL
 
 
 
@@ -27,7 +27,7 @@ Fichiers textes prouvant l'exécution.
 * <a href="/labs-final/lab2/proof/plan_fact_join.txt" download>plan_fact_join.txt</a>
 
 ## 4. Outputs (Données générées)
-Résultats de la modélisation (Structure Spark ZIP).
+
 
 ### Table de Faits
 <a href="/labs-final/lab2/outputs/fact.zip" download>
