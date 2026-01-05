@@ -1,9 +1,30 @@
-# Labs – Final
+---
+title: Practice labs & Assignments
+---
 
-- [lab0-setup-practice](lab0-setup-practice)
-- [lab1-assignment](lab1-assignment)
-- [lab1-practice](lab1-practice)
-- [lab2-assignment](lab2-assignment)
-- [lab2-practice](lab2-practice)
-- [lab3-assignment](lab3-assignment)
-- [lab3-practice](lab3-practice)
+
+
+##  Assignments 
+
+* **[Assignment 1 : Data Collection](/labs-final/assignment1/)**
+  * *Date : Janvier 2026*
+  
+
+* **[Assignment 3 : Data Pipeline](/labs-final/assignment3/)**
+  * *Date : Janvier 2026*
+  
+
+---
+
+##  Practice Labs 
+
+* **[Lab 1 : Practice](/labs-final/lab1-practice/)**
+  * *Date : Janvier 2026*
+
+
+* **[Lab 2 : Practice](/labs-final/lab2/)**
+  * *Date : Janvier 2026*
+
+
+* **[Lab 3 : Practice](/labs-final/lab3/)**
+  * *Date : Janvier 2026*
