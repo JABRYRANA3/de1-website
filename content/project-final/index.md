@@ -5,7 +5,6 @@ title: Final Project
 # Final Project : Data Engineering Pipeline
 
 ## 1. Notebook
-Visualisation et téléchargement du code source.
 
 * **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/project-final/DE1_Project_Notebook_EN.ipynb)
 
