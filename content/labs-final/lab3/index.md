@@ -4,7 +4,6 @@ title: Lab 3 - Practice
 
 # Lab 3 : Physical Representations and Batch || Costs
 
-
 ## 1. Notebook & Code
 * **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab3/DE1_Lab3_Notebook_EN.ipynb?flush_cache=true)
 * **Télécharger le source :**
@@ -19,24 +18,23 @@ Analyse complète au format PDF, incluant des captures d’écran des métriques
     Télécharger le Rapport PDF
 </a>
 
-
 ## 3. Proof (Plans d'exécution)
-Preuves d'exécution
+Preuves d'exécution.
 
 <ul>
   <li>
-    <a href="/labs-final/lab3/proof/plan_broadcast.txt" download target="_blank">
-       Télécharger plan_broadcast.txt
+    <a href="/labs-final/lab3/proof/plan_broadcast.txt" download="plan_broadcast.txt" target="_blank">
+        Télécharger plan_broadcast.txt
     </a>
   </li>
   <li>
-    <a href="/labs-final/lab3/proof/plan_column.txt" download target="_blank">
-       Télécharger plan_column.txt
+    <a href="/labs-final/lab3/proof/plan_column.txt" download="plan_column.txt" target="_blank">
+        Télécharger plan_column.txt
     </a>
   </li>
   <li>
-    <a href="/labs-final/lab3/proof/plan_row.txt" download target="_blank">
-       Télécharger plan_row.txt
+    <a href="/labs-final/lab3/proof/plan_row.txt" download="plan_row.txt" target="_blank">
+        Télécharger plan_row.txt
     </a>
   </li>
 </ul>
