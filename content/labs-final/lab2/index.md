@@ -6,7 +6,7 @@ title: Lab 2 - Practice
 
 
 ## 1. Notebook & Code
-* **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab2/DE1_Lab2_Notebook_EN.ipynb)
+* **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab2/DE1_Lab2_Notebook_EN.ipynb?flush_cache=true)
 * **Télécharger le source :**
 <a href="/labs-final/lab2/DE1_Lab2_Notebook_EN.ipynb" download="DE1_Lab2_Notebook_EN.ipynb">
     Télécharger le Notebook (.ipynb)
