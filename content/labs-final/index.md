@@ -6,11 +6,11 @@ title: Labs practice & Assignments
 
 ##  Assignments 
 
-* **[Assignment 1 : Data Collection](/labs-final/assignment1/)**
+* **[Assignment 1 ](/labs-final/assignment1/)**
   
   
 
-* **[Assignment 3 : Data Pipeline](/labs-final/assignment3/)**
+* **[Assignment 3 ](/labs-final/assignment3/)**
   
   
 
