@@ -1,0 +1,9 @@
+run_id;query;representation;files_read;input_size_bytes;shuffle_read_bytes;shuffle_write_bytes;notes;timestamp
+r1;Q1;row;3;28.4 KiB;0;28.4 KiB;count() after join;1000 ms
+r1;Q1;column;3;28.4 KiB;0;28.4 KiB;Q1 column count();400 ms
+r1;Q2;row;3;483;0;483;Q2 row;700 ms
+r1;Q2;column;3;483;0;483;Q2 columns;300 ms
+r1;Q3;row;3;25.9 KiB;0;25.9 KiB;Q3  row;400 ms
+r1;Q3;column;3;25.9 KiB;0;25.9 KiB;Q3 column;ms
+r1;Join;normal;3;1704;0;1704;non broadcast join;800 ms
+r1;Join;broadcast;3;1704;0;1704;broadcast join;700 ms

@@ -1,0 +1,16 @@
+2025-12-22 17:31:20.248704
+AdaptiveSparkPlan isFinalPlan=false
++- Sort [total_n#1771L DESC NULLS LAST], true, 0
+   +- Exchange rangepartitioning(total_n#1771L DESC NULLS LAST, 200), ENSURE_REQUIREMENTS, [plan_id=554]
+      +- HashAggregate(keys=[curr_category#1652], functions=[sum(n#1122)], output=[curr_category#1652, total_n#1771L])
+         +- Exchange hashpartitioning(curr_category#1652, 200), ENSURE_REQUIREMENTS, [plan_id=551]
+            +- HashAggregate(keys=[curr_category#1652], functions=[partial_sum(n#1122)], output=[curr_category#1652, sum#1887L])
+               +- Project [n#1122, curr_category#1652]
+                  +- BroadcastHashJoin [curr_title#1120], [curr_title#1651], LeftOuter, BuildRight, false
+                     :- InMemoryTableScan [curr_title#1120, n#1122]
+                     :     +- InMemoryRelation [prev_title#1119, curr_title#1120, type#1121, n#1122, ts#1123, year#1124, month#1125], StorageLevel(disk, memory, deserialized, 1 replicas)
+                     :           +- *(1) ColumnarToRow
+                     :              +- FileScan parquet [prev_title#1119,curr_title#1120,type#1121,n#1122,ts#1123,year#1124,month#1125] Batched: true, DataFilters: [], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Lab03/outputs/lab3/columnar..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<prev_title:string,curr_title:string,type:string,n:int,ts:timestamp>
+                     +- BroadcastExchange HashedRelationBroadcastMode(List(input[0, string, false]),false), [plan_id=546]
+                        +- Filter isnotnull(curr_title#1651)
+                           +- FileScan csv [curr_title#1651,curr_category#1652] Batched: false, DataFilters: [isnotnull(curr_title#1651)], Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Lab03/lab3_dim_curr_categor..., PartitionFilters: [], PushedFilters: [IsNotNull(curr_title)], ReadSchema: struct<curr_title:string,curr_category:string>

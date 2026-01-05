@@ -1,0 +1,12 @@
+2025-12-22 17:09:27.189781
+AdaptiveSparkPlan isFinalPlan=false
++- TakeOrderedAndProject(limit=50, orderBy=[n#1348L DESC NULLS LAST], output=[year#1124,month#1125,prev_title#1119,curr_title#1120,n#1348L])
+   +- HashAggregate(keys=[year#1124, month#1125, prev_title#1119, curr_title#1120], functions=[sum(n#1122)], output=[year#1124, month#1125, prev_title#1119, curr_title#1120, n#1348L])
+      +- Exchange hashpartitioning(year#1124, month#1125, prev_title#1119, curr_title#1120, 200), ENSURE_REQUIREMENTS, [plan_id=342]
+         +- HashAggregate(keys=[year#1124, month#1125, prev_title#1119, curr_title#1120], functions=[partial_sum(n#1122)], output=[year#1124, month#1125, prev_title#1119, curr_title#1120, sum#1463L])
+            +- Project [prev_title#1119, curr_title#1120, n#1122, year#1124, month#1125]
+               +- Filter (isnotnull(type#1121) AND (type#1121 = link))
+                  +- InMemoryTableScan [curr_title#1120, month#1125, n#1122, prev_title#1119, type#1121, year#1124], [isnotnull(type#1121), (type#1121 = link)]
+                        +- InMemoryRelation [prev_title#1119, curr_title#1120, type#1121, n#1122, ts#1123, year#1124, month#1125], StorageLevel(disk, memory, deserialized, 1 replicas)
+                              +- *(1) ColumnarToRow
+                                 +- FileScan parquet [prev_title#1119,curr_title#1120,type#1121,n#1122,ts#1123,year#1124,month#1125] Batched: true, DataFilters: [], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Lab03/outputs/lab3/columnar..., PartitionFilters: [], PushedFilters: [], ReadSchema: struct<prev_title:string,curr_title:string,type:string,n:int,ts:timestamp>
