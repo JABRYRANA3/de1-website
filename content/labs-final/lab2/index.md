@@ -5,6 +5,7 @@ title: Lab 2 - Practice
 # Lab 2 : Star Schema ETL
 
 
+
 ## 1. Notebook & Code
 * **Visualiser en ligne :** [Ouvrir dans NBViewer](https://nbviewer.org/github/JABRYRANA3/de1-website/blob/main/static/labs-final/lab2/DE1_Lab2_Notebook_EN.ipynb)
 * **Télécharger le source :**
@@ -15,27 +16,27 @@ title: Lab 2 - Practice
 ## 2. Rapport
 Analyse complète au format PDF, incluant des captures d’écran des métriques et de l’utilisation de l’IA.
 
-<a href="/labs-final/lab2/Rapport_lab2.pdf" download>
+<a href="/labs-final/lab2/Rapport_labs_practice.pdf" download>
     Télécharger le Rapport PDF
 </a>
 
 ## 3. Proof (Plans d'exécution)
 Fichiers textes prouvant l'exécution.
 
-* <a href="/labs-final/lab2/plan_execution.txt" download>plan_execution.txt</a>
-* <a href="/labs-final/lab2/plan_explain.txt" download>plan_explain.txt</a>
+* <a href="/labs-final/lab2/proof/plan_ingest.txt" download>plan_ingest.txt</a>
+* <a href="/labs-final/lab2/proof/plan_fact_join.txt" download>plan_fact_join.txt</a>
 
 ## 4. Outputs (Données générées)
+Résultats de la modélisation (Structure Spark ZIP).
 
-
-### Table de Faits (Partitionnée)
-<a href="/labs-final/lab2/fact_sales.zip" download>
-    Télécharger Fact Sales (Structure complète ZIP)
+### Table de Faits
+<a href="/labs-final/lab2/outputs/fact.zip" download>
+    Télécharger Fact Sales (.zip)
 </a>
 
 ### Dimensions
-<a href="/labs-final/lab2/dimensions.zip" download>
-    Télécharger toutes les Dimensions (ZIP)
+<a href="/labs-final/lab2/outputs/dim.zip" download>
+    Télécharger Dimensions (.zip)
 </a>
 
 ## 5. Metrics & Datasets
