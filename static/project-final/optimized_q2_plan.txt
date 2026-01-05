@@ -1,0 +1,9 @@
+2026-01-04 15:04:13.663647
+Optimization: repartition(200) + sortWithinPartitions(click_count desc)
+AdaptiveSparkPlan isFinalPlan=false
++- TakeOrderedAndProject(limit=100, orderBy=[total_clicks#194L DESC NULLS LAST], output=[source_page#184,target_page#185,total_clicks#194L])
+   +- HashAggregate(keys=[source_page#184, target_page#185], functions=[sum(click_count#187)], output=[source_page#184, target_page#185, total_clicks#194L])
+      +- Exchange hashpartitioning(source_page#184, target_page#185, 200), ENSURE_REQUIREMENTS, [plan_id=1797]
+         +- HashAggregate(keys=[source_page#184, target_page#185], functions=[partial_sum(click_count#187)], output=[source_page#184, target_page#185, sum#197L])
+            +- Exchange RoundRobinPartitioning(200), REPARTITION_BY_NUM, [plan_id=1792]
+               +- FileScan parquet [source_page#184,target_page#185,click_count#187] Batched: true, DataFilters: [], Format: Parquet, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Projet/outputs/project/silver], PartitionFilters: [], PushedFilters: [], ReadSchema: struct<source_page:string,target_page:string,click_count:int>

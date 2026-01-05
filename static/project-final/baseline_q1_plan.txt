@@ -1,0 +1,12 @@
+2026-01-04 14:57:48.998496
+AdaptiveSparkPlan isFinalPlan=false
++- TakeOrderedAndProject(limit=100, orderBy=[total_clicks#127L DESC NULLS LAST], output=[page#126,total_clicks#127L])
+   +- HashAggregate(keys=[source_page#26], functions=[sum(click_count#30)], output=[page#126, total_clicks#127L])
+      +- Exchange hashpartitioning(source_page#26, 200), ENSURE_REQUIREMENTS, [plan_id=1635]
+         +- HashAggregate(keys=[source_page#26], functions=[partial_sum(click_count#30)], output=[source_page#26, sum#136L])
+            +- HashAggregate(keys=[source_page#26, target_page#27, link_type#28, click_count#30], functions=[], output=[source_page#26, click_count#30])
+               +- Exchange hashpartitioning(source_page#26, target_page#27, link_type#28, click_count#30, 200), ENSURE_REQUIREMENTS, [plan_id=1631]
+                  +- HashAggregate(keys=[source_page#26, target_page#27, link_type#28, click_count#30], functions=[], output=[source_page#26, target_page#27, link_type#28, click_count#30])
+                     +- Project [_c0#17 AS source_page#26, _c1#18 AS target_page#27, _c2#19 AS link_type#28, cast(_c3#20 as int) AS click_count#30]
+                        +- Filter ((((((isnotnull(_c3#20) AND isnotnull(_c0#17)) AND isnotnull(_c1#18)) AND isnotnull(cast(_c3#20 as int))) AND (cast(_c3#20 as int) >= 0)) AND (length(_c0#17) > 0)) AND (length(_c1#18) > 0))
+                           +- FileScan csv [_c0#17,_c1#18,_c2#19,_c3#20] Batched: false, DataFilters: [isnotnull(_c3#20), isnotnull(_c0#17), isnotnull(_c1#18), isnotnull(cast(_c3#20 as int)), (cast(_..., Format: CSV, Location: InMemoryFileIndex(1 paths)[file:/mnt/c/Users/rania/OneDrive/Documents/Projet/data/raw/clickstream..., PartitionFilters: [], PushedFilters: [IsNotNull(_c3), IsNotNull(_c0), IsNotNull(_c1)], ReadSchema: struct<_c0:string,_c1:string,_c2:string,_c3:string>

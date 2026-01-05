@@ -1,0 +1,7 @@
+run_id;query;phase;files_read;input_size_bytes;shuffle_read_bytes;shuffle_write_bytes;elapsed_ms;notes;timestamp
+r1;Q1;baseline;1;512.3 MiB;278.7 MiB;278.7 MiB;12000;6M shuffle records;04/01/2026 01:12
+r1;Q1;optimized;17;132.9 MiB;122.3 MiB;122.3 MiB;7000;;04/01/2026 15:11
+r1;Q2;baseline;1;512.3 MiB;278.7 MiB;278.7 MiB;16000;6M shuffle records;04/01/2026 14:18
+r1;Q2;optimized;17;132.9 MiB;271.7 MiB;271.7 MiB;13000;optimized layout, repartition;04/01/2026 15:11
+r1;Q3;baseline;1;512.3 MiB;278.7 MiB;278.7 MiB;11000;6M shuffle records;04/01/2026 14:26
+r1;Q3;optimized;17;132.9 MiB;16.6 MiB;16.6 MiB;3000;;04/01/2026 15:11

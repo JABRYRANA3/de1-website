@@ -1,0 +1,56 @@
+paths:
+  raw_tsv_glob: "data/raw/*.tsv"
+
+
+
+  outputs_root: outputs/project
+  bronze: outputs/project/bronze
+  silver: outputs/project/silver
+  gold: outputs/project/gold
+
+
+  proof: proof
+  metrics_log: project_metrics_log.csv
+
+layout:
+  target_file_size_mb: 128
+  num_partitions: 200   
+  
+queries:
+  q1:
+    name: "Top pages by total clicks"
+    sql: |
+      SELECT
+        source_page AS page,
+        SUM(click_count) AS total_clicks
+      FROM silver
+      GROUP BY source_page
+      ORDER BY total_clicks DESC
+      LIMIT 100
+
+  q2:
+    name: "Top targets per source"
+    sql: |
+      SELECT
+        source_page,
+        target_page,
+        SUM(click_count) AS total_clicks
+      FROM silver
+      GROUP BY source_page, target_page
+      ORDER BY total_clicks DESC
+      LIMIT 100
+
+  q3:
+    name: "Top link types"
+    sql: |
+      SELECT
+        link_type,
+        COUNT(*) AS edges,
+        SUM(click_count) AS total_clicks
+      FROM silver
+      GROUP BY link_type
+      ORDER BY total_clicks DESC
+      LIMIT 100
+
+
+
