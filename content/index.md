@@ -1,8 +1,9 @@
 ---
-title: Data Engineering I – Labs et Projet Final
+title: ESIEE Paris – Data Engineering I
+
 ---
 
-# ESIEE Paris – Data Engineering I
+# Data Engineering I – Labs et Projet Final
 
 ### Année universitaire 2025–2026
 
@@ -16,8 +17,8 @@ Ce site regroupe :
 - ainsi que des **captures d’écran Spark UI** illustrant les métriques et les performances.
 
 **Auteurs :**
-- JABRY Rana  
-- DEBBAGH Chama  
+- **JABRY Rana**
+- **DEBBAGH Chama** 
 
 ---
 
